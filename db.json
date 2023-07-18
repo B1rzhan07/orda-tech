@@ -1,0 +1,132 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "type": "Vegetab",
+      "oldPrice": 20,
+      "newPrice": 13,
+      "name": "Calabrese Broccoli",
+      "path": "/food/first.png"
+    },
+    {
+      "id": 2,
+      "type": "Fresh",
+      "oldPrice": 20,
+      "newPrice": 14,
+      "name": "Fresh Banana Fruites",
+      "path": "/food/2.png"
+    },
+    {
+      "id": 3,
+      "type": "Millets",
+      "oldPrice": 20,
+      "newPrice": 15,
+      "name": "White Nuts",
+      "path": "/food/3.png"
+    },
+    {
+      "id": 4,
+      "name": "Vegan Red Tomato",
+      "type": "Vegetable",
+      "path": "/food/4.png",
+      "newPrice": 11,
+      "oldPrice": 0
+    },
+    {
+      "id": 5,
+      "type": "Health",
+      "oldPrice": 20,
+      "newPrice": 15,
+      "name": "Mung Bean",
+      "path": "/food/5.png"
+    },
+    {
+      "id": 6,
+      "type": "Nuts",
+      "oldPrice": 20,
+      "newPrice": 12,
+      "name": "Brown Hazelnut",
+      "path": "/food/6.png"
+    },
+    {
+      "id": 7,
+      "type": "Fresh",
+      "oldPrice": 20,
+      "newPrice": 17,
+      "name": "Eggs",
+      "path": "/food/7.png"
+    },
+    {
+      "id": 8,
+      "type": "Fresh",
+      "oldPrice": 20,
+      "newPrice": 15,
+      "name": "Zelco Suji Elaichi Rusk",
+      "path": "/food/8.png"
+    },
+    {
+      "id": 9,
+      "type": "Health",
+      "oldPrice": 20,
+      "newPrice": 11,
+      "name": "Mung Bean",
+      "path": "/food/9.png"
+    },
+    {
+      "id": 10,
+      "type": "Nuts",
+      "oldPrice": 20,
+      "newPrice": 12,
+      "name": "White Hazelnut",
+      "path": "/food/10.png"
+    },
+    {
+      "id": 11,
+      "type": "Fresh",
+      "oldPrice": 20,
+      "newPrice": 17,
+      "name": "Fresh Corn",
+      "path": "/food/11.png"
+    },
+    {
+      "id": 12,
+      "type": "Fresh",
+      "oldPrice": 20,
+      "newPrice": 15,
+      "name": "Organic Almonds",
+      "path": "/food/12.png"
+    },
+    {
+      "id": 13,
+      "type": "Vegetable",
+      "oldPrice": 20,
+      "newPrice": 11,
+      "name": "Mung Bean",
+      "path": "/food/13.png"
+    },
+    {
+      "id": 14,
+      "name": "Brown Hazelnut",
+      "type": "Vegetable",
+      "path": "/food/14.png",
+      "newPrice": 12,
+      "oldPrice": 0
+    },
+    {
+      "id": 15,
+      "name": "Onion",
+      "type": "Vegetable",
+      "path": "/food/15.png",
+      "newPrice": 17,
+      "oldPrice": 0
+    },
+    {
+      "id": 16,
+      "type": "Vegetable",
+      "oldPrice": 20,
+      "newPrice": 17,
+      "name": "Cabbage",
+      "path": "/food/16.png"
+    }
+  ]
+}
