@@ -28,6 +28,10 @@ const ModalComponent: React.FC = () => {
   const path = useInput('')
   const newPrice = useInput('')
   const oldPrice = useInput('')
+  const description = useInput('string')
+  const comment = useInput('string')
+  const addition = useInput('string')
+
   const [createFood] = foodApi.endpoints.createFood.useMutation()
   const handleCreate = async () => {
     try {
@@ -37,6 +41,9 @@ const ModalComponent: React.FC = () => {
         path: path.value,
         newPrice: Number(newPrice.value),
         oldPrice: Number(oldPrice.value),
+        description: description.value,
+        comment: comment.value,
+        addition: addition.value,
       })
       console.log(result)
       setOpen(false)

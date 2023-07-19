@@ -10,8 +10,9 @@ import {
 } from '@mui/material'
 import React from 'react'
 import { IFood, foodApi } from '../../Services/food'
+import Info from './Info'
 
-const StyledButton = styled(Button)({
+export const StyledButton = styled(Button)({
   backgroundColor: '#274C5B',
   color: 'white',
   padding: '5px 12px 6px 12px',
@@ -29,7 +30,6 @@ const StyledButton = styled(Button)({
 
 const CardComponent: React.FC<IFood> = ({ id, name, newPrice, path, type }) => {
   const [deleteFood] = foodApi.endpoints.deleteFood.useMutation()
-
   const handleDelete = async () => {
     try {
       const result = await deleteFood(id)
@@ -44,14 +44,13 @@ const CardComponent: React.FC<IFood> = ({ id, name, newPrice, path, type }) => {
     <Card sx={{ maxWidth: 345, backgroundColor: '#F9F8F8' }}>
       <StyledButton variant="contained">{type}</StyledButton>
       <StyledButton
+        variant="contained"
         onClick={() => {
           void handleDelete()
         }}
-        variant="contained"
       >
         Delete
       </StyledButton>
-      <StyledButton variant="contained">Update</StyledButton>
       <CardMedia component="img" src={path} alt="Paella dish" />
       <CardContent>
         <Typography
@@ -91,6 +90,7 @@ const CardComponent: React.FC<IFood> = ({ id, name, newPrice, path, type }) => {
             size="small"
           />
         </div>
+        <Info id={id} />
       </CardContent>
     </Card>
   )

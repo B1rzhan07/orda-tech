@@ -8,6 +8,9 @@ export interface IFood {
   newPrice: number;
   type: string;
   path: string;
+  description: string;
+  addition: string;
+  comment: string;
 }
 export const foodApi = createApi({
   reducerPath: "foodApi",
@@ -42,6 +45,12 @@ export const foodApi = createApi({
         method: "DELETE",
       }),
       invalidatesTags: ["Food"],
+    }),
+    getFoodById: builder.query<IFood, number>({
+      query: (id: number) => ({
+        url: `/food/${id}`,
+      }),
+      providesTags: (result, error, id) => [{ type: "Food", id }],
     }),
   }),
 });

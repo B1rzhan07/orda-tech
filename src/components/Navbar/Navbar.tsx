@@ -86,8 +86,11 @@ const Navbar = () => {
                           backgroundColor: 'white',
                         }}
                       >
-                        <Button onClick={() => console.log('Clicked!')}>
-                          go
+                        <Button
+                          variant="contained"
+                          onClick={() => console.log('Clicked!')}
+                        >
+                          someting
                         </Button>
                       </div>
                     )}
@@ -160,9 +163,26 @@ const Navbar = () => {
                         backgroundColor: 'white',
                       }}
                     >
-                      <Button onClick={() => console.log('Clicked!')}>
-                        go
-                      </Button>
+                      <Stack spacing={2} sx={{ p: 4, zIndex: 1 }}>
+                        <Button
+                          variant="contained"
+                          onClick={() => console.log('Clicked!')}
+                        >
+                          Someting
+                        </Button>
+                        <Button
+                          variant="contained"
+                          onClick={() => console.log('Clicked!')}
+                        >
+                          Anything
+                        </Button>
+                        <Button
+                          variant="contained"
+                          onClick={() => console.log('Clicked!')}
+                        >
+                          here
+                        </Button>
+                      </Stack>
                     </div>
                   )}
                 </div>

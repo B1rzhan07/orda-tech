@@ -113,6 +113,9 @@ const Banner: React.FC = () => {
               type={item.type}
               id={item.id}
               oldPrice={0}
+              addition="Addition"
+              description="Description"
+              comment="Comments"
             />
           ))}
       </Box>
